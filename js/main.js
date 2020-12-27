@@ -4,30 +4,41 @@ const dadNavbar = document.getElementsByClassName('dad-navbar')[0];
 hamburger.addEventListener('click', () => {
     dadNavbar.classList.toggle('show');
 
-})
+});
 
-// var i=0;
-// function read(){
-//     if(!i){
-//         document.getElementById("more").style.
-//                 display ="inline";
-//         document.getElementById("dots").style.
-//                 display ="none";
-//         document.getElementById("read").innerHTML="Read Less";
-//         i=1;
-//     }
-//     else{
-//         document.getElementById("more").style.
-//                 display ="none";
-//         document.getElementById("dots").style.
-//                 display ="inline";
-//         document.getElementById("read").innerHTML="Read More";
-//         i=0;
-//     }
-// }
+var i=0;
+function read(){
+    if(!i){
+        document.getElementById("more").style.
+                display ="inline";
+        document.getElementById("dots").style.
+                display ="none";
+        document.getElementById("read").innerHTML="Read Less";
+        i=1;
+    }
+    else{
+        document.getElementById("more").style.
+                display ="none";
+        document.getElementById("dots").style.
+                display ="inline";
+        document.getElementById("read").innerHTML="Read More";
+        i=0;
+    }
+}
 
-$(document).ready(function(){
-    $("#read").click(function(){
-      $("#more").slideToggle("slow");
-    });
-  });
+// $(document).ready(function(){
+//     $("#read").click(function(){
+//       $("#more").slideToggle(200)
+//     });
+//   }); 
+
+
+//   $("#read").click(function() {
+//     var kkk = $(this).text();
+//     if (kkk == "Read More" ) {
+//         $("#read").text("Read Less");
+//     }else {
+//         $("#read").text("Read More");
+//     }
+//     $("#more").slideToggle(500);
+// });
